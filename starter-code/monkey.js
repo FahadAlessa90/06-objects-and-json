@@ -1,4 +1,32 @@
 console.log("monkey.js loaded");
+
+var Monkey = function (Name, species) {
+	this.Name = Name;
+	this.species = species;
+	this.foodEaten = [];
+	console.log('Monkey instantiated');
+}
+
+
+Monkey.prototype.eatSomething = function(food) {
+	this.foodEaten.push(food);
+}
+
+Monkey.prototype.introduce = function() {
+	console.log($(this.Name) + " is " + $(this.species) + " Eats " + $(this.foodEaten));
+}
+
+
+
+var Gurilla = new Monkey ('GuGu','Gurilla');
+var Baboon = new Monkey ('BoBo','Baboon');
+var Ape = new Monkey ('ApAp','Ape');
+var Banana = new eatSomething('Banana');
+Banana.eatSomething;
+var Nut = new eatSomething('Nut');
+var Apple = new eatSomething('Apple');
+
+
 /*Work with a partner to create a monkey object, which has the following properties:
 
 * name
